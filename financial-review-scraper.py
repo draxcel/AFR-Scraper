@@ -1,6 +1,5 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-#from pandas import DataFrame
 
 import datetime
 import pandas_datareader.data as web
