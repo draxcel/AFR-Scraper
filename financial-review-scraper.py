@@ -13,7 +13,7 @@ print('Date: ', nowDate)
 print('Time: ', nowTime, '\n')
 
 asx200 = web.DataReader('^AXJO', 'yahoo', yesDate, nowDate)
-print("Today's S&P/ASX 200:", round(asx200.iloc[0, 2]), '\n')
+print("Current S&P/ASX 200 Close:", round(asx200.iloc[0, 5]), '\n')
 print('<Financial Review Today>', '\n')
 
 html = urlopen('https://www.afr.com/markets/equity-markets')
