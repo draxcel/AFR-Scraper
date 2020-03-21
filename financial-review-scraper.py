@@ -23,4 +23,4 @@ titleList = soup.findAll('a', {'class':'_20-Rx'})
 for title in titleList:
     print('●', title.get_text(), '\n')
 
-print('-https://www.afr.com/markets/equity-markets-')
+print('Source: https://www.afr.com/markets/equity-markets')
