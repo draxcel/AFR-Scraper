@@ -32,13 +32,13 @@ else:
 
 print("Current S&P/ASX 200 Close:", asx200_today,
       sign, asx200_diff, '(', sign, round(asx200_diffper, 2), '%', ')','\n')
-print('<Financial Review Today>', '\n')
+print('<The Australian Financial Review - Equity markets>', '\n')
 
 html = urlopen('https://www.afr.com/markets/equity-markets')
 soup = BeautifulSoup(html.read(), 'html.parser')
 
 titleList = soup.findAll('a', {'class':'_20-Rx'})
 for title in titleList:
-    print('●', title.get_text(), '\n')
+    print('*', title.get_text(), '\n')
 
 print('Source: https://www.afr.com/markets/equity-markets')
